@@ -13,7 +13,7 @@ O projeto foi desenvolvido como requisito de avaliação prática da disciplina 
 
 ## 🚀 Tecnologias Utilizadas
 - **Java 21**
-- **Spring Boot 3** (Spring Web, Spring Data JPA)
+- **Spring Boot 4.1.1** (Spring Web, Spring Data JPA)
 - **PostgreSQL**
 - **Docker e Docker Compose** (Containerização da API e do banco de dados)
 
