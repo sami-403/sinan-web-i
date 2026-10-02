@@ -6,7 +6,7 @@ import jakarta.persistence.Embeddable;
 public class Investigator {
 
     private String municipeOrUbs;
-    private Integer cnes;
+    private Integer investigatorCnes;
 
     private String invetigatorName;
     private String function;
@@ -16,9 +16,9 @@ public class Investigator {
 
     }
 
-    public Investigator(String municipeOrUbs, Integer cnes, String invetigatorName, String function, String signature) {
+    public Investigator(String municipeOrUbs, Integer investigatorCnes, String invetigatorName, String function, String signature) {
         this.municipeOrUbs = municipeOrUbs;
-        this.cnes = cnes;
+        this.investigatorCnes = investigatorCnes;
         this.invetigatorName = invetigatorName;
         this.function = function;
         this.signature = signature;
@@ -33,12 +33,12 @@ public class Investigator {
         this.municipeOrUbs = municipeOrUbs;
     }
 
-    public Integer getCnes() {
-        return cnes;
+    public Integer getInvestigatorCnes() {
+        return investigatorCnes;
     }
 
-    public void setCnes(Integer cnes) {
-        this.cnes = cnes;
+    public void setInvestigatorCnes(Integer investigatorCnes) {
+        this.investigatorCnes = investigatorCnes;
     }
 
     public String getInvetigatorName() {
