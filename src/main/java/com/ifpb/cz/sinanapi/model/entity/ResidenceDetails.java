@@ -7,11 +7,11 @@ import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 @Embeddable
 public class ResidenceDetails {
-    private FederativeUnit uf;
+    private FederativeUnit residenceUf;
     private String residenceMunicipe;
-    private Integer ibgeCode;
-    private String district;
-    private String neighbo;
+    private Integer residenceIbgeCode;
+    private String residenceDistrict;
+    private String residenceNeighbo;
     private String street;
     private Integer code;
     private String houseNumber;
@@ -22,18 +22,18 @@ public class ResidenceDetails {
     private String phoneNumber;
     @Enumerated(EnumType.ORDINAL)
     private Zone zone;
-    private String country;
+    private String residenceCountry;
 
     public ResidenceDetails(){
 
     }
 
-    public ResidenceDetails(FederativeUnit uf, String residenceMunicipe, Integer ibgeCode, String district, String neighbo, String street, Integer code, String houseNumber, double lat, double lon, String referencePoint, String cep, String phoneNumber, Zone zone, String country) {
-        this.uf = uf;
+    public ResidenceDetails(FederativeUnit residenceUf, String residenceMunicipe, Integer residenceIbgeCode, String residenceDistrict, String residenceNeighbo, String street, Integer code, String houseNumber, double lat, double lon, String referencePoint, String cep, String phoneNumber, Zone zone, String residenceCountry) {
+        this.residenceUf = residenceUf;
         this.residenceMunicipe = residenceMunicipe;
-        this.ibgeCode = ibgeCode;
-        this.district = district;
-        this.neighbo = neighbo;
+        this.residenceIbgeCode = residenceIbgeCode;
+        this.residenceDistrict = residenceDistrict;
+        this.residenceNeighbo = residenceNeighbo;
         this.street = street;
         this.code = code;
         this.houseNumber = houseNumber;
@@ -43,16 +43,16 @@ public class ResidenceDetails {
         this.cep = cep;
         this.phoneNumber = phoneNumber;
         this.zone = zone;
-        this.country = country;
+        this.residenceCountry = residenceCountry;
     }
 
 
-    public FederativeUnit getUf() {
-        return uf;
+    public FederativeUnit getResidenceUf() {
+        return residenceUf;
     }
 
-    public void setUf(FederativeUnit uf) {
-        this.uf = uf;
+    public void setResidenceUf(FederativeUnit residenceUf) {
+        this.residenceUf = residenceUf;
     }
 
     public String getResidenceMunicipe() {
@@ -63,28 +63,28 @@ public class ResidenceDetails {
         this.residenceMunicipe = residenceMunicipe;
     }
 
-    public Integer getIbgeCode() {
-        return ibgeCode;
+    public Integer getResidenceIbgeCode() {
+        return residenceIbgeCode;
     }
 
-    public void setIbgeCode(Integer ibgeCode) {
-        this.ibgeCode = ibgeCode;
+    public void setResidenceIbgeCode(Integer residenceIbgeCode) {
+        this.residenceIbgeCode = residenceIbgeCode;
     }
 
-    public String getDistrict() {
-        return district;
+    public String getResidenceDistrict() {
+        return residenceDistrict;
     }
 
-    public void setDistrict(String district) {
-        this.district = district;
+    public void setResidenceDistrict(String residenceDistrict) {
+        this.residenceDistrict = residenceDistrict;
     }
 
-    public String getNeighbo() {
-        return neighbo;
+    public String getResidenceNeighbo() {
+        return residenceNeighbo;
     }
 
-    public void setNeighbo(String neighbo) {
-        this.neighbo = neighbo;
+    public void setResidenceNeighbo(String residenceNeighbo) {
+        this.residenceNeighbo = residenceNeighbo;
     }
 
     public String getStreet() {
@@ -159,11 +159,11 @@ public class ResidenceDetails {
         this.zone = zone;
     }
 
-    public String getCountry() {
-        return country;
+    public String getResidenceCountry() {
+        return residenceCountry;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setResidenceCountry(String residenceCountry) {
+        this.residenceCountry = residenceCountry;
     }
 }

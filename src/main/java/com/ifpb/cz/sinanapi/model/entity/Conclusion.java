@@ -21,15 +21,15 @@ public class Conclusion {
     private Affirmations fromResidenceMunicipality;
 
     @Enumerated(EnumType.STRING)
-    private FederativeUnit uf;
-    private String conutry;
+    private FederativeUnit conclusionUf;
+    private String conclusionCountry;
 
-    private String municipe;
+    private String conclusionMunicipe;
 
-    private Integer ibgeCode;
-    private String district;
+    private Integer conclusionIbgeCode;
+    private String conclusionDistrict;
 
-    private String neighbo;
+    private String conclusionNeighbo;
 
     @Enumerated(EnumType.ORDINAL)
     private Affirmations workRalationedDisease;
@@ -46,17 +46,17 @@ public class Conclusion {
 
     }
 
-    public Conclusion(LocalDate investigationDate, Classification finalClassification, ConfirmationCriteria confirmationCriteria, Affirmations fromResidenceMunicipality, FederativeUnit uf, String conutry, String municipe, Integer ibgeCode, String district, String neighbo, Affirmations workRalationedDisease, CaseEvolution caseEvolution, LocalDate deathDate, LocalDate endedDate) {
+    public Conclusion(LocalDate investigationDate, Classification finalClassification, ConfirmationCriteria confirmationCriteria, Affirmations fromResidenceMunicipality, FederativeUnit conclusionUf, String conclusionCountry, String conclusionMunicipe, Integer conclusionIbgeCode, String conclusionDistrict, String conclusionNeighbo, Affirmations workRalationedDisease, CaseEvolution caseEvolution, LocalDate deathDate, LocalDate endedDate) {
         this.investigationDate = investigationDate;
         this.finalClassification = finalClassification;
         this.confirmationCriteria = confirmationCriteria;
         this.fromResidenceMunicipality = fromResidenceMunicipality;
-        this.uf = uf;
-        this.conutry = conutry;
-        this.municipe = municipe;
-        this.ibgeCode = ibgeCode;
-        this.district = district;
-        this.neighbo = neighbo;
+        this.conclusionUf = conclusionUf;
+        this.conclusionCountry = conclusionCountry;
+        this.conclusionMunicipe = conclusionMunicipe;
+        this.conclusionIbgeCode = conclusionIbgeCode;
+        this.conclusionDistrict = conclusionDistrict;
+        this.conclusionNeighbo = conclusionNeighbo;
         this.workRalationedDisease = workRalationedDisease;
         this.caseEvolution = caseEvolution;
         this.deathDate = deathDate;
@@ -95,52 +95,52 @@ public class Conclusion {
         this.fromResidenceMunicipality = fromResidenceMunicipality;
     }
 
-    public FederativeUnit getUf() {
-        return uf;
+    public FederativeUnit getConclusionUf() {
+        return conclusionUf;
     }
 
-    public void setUf(FederativeUnit uf) {
-        this.uf = uf;
+    public void setConclusionUf(FederativeUnit conclusionUf) {
+        this.conclusionUf = conclusionUf;
     }
 
-    public String getConutry() {
-        return conutry;
+    public String getConclusionCountry() {
+        return conclusionCountry;
     }
 
-    public void setConutry(String conutry) {
-        this.conutry = conutry;
+    public void setConclusionCountry(String conclusionCountry) {
+        this.conclusionCountry = conclusionCountry;
     }
 
-    public String getMunicipe() {
-        return municipe;
+    public String getConclusionMunicipe() {
+        return conclusionMunicipe;
     }
 
-    public void setMunicipe(String municipe) {
-        this.municipe = municipe;
+    public void setConclusionMunicipe(String conclusionMunicipe) {
+        this.conclusionMunicipe = conclusionMunicipe;
     }
 
-    public Integer getIbgeCode() {
-        return ibgeCode;
+    public Integer getConclusionIbgeCode() {
+        return conclusionIbgeCode;
     }
 
-    public void setIbgeCode(Integer ibgeCode) {
-        this.ibgeCode = ibgeCode;
+    public void setConclusionIbgeCode(Integer conclusionIbgeCode) {
+        this.conclusionIbgeCode = conclusionIbgeCode;
     }
 
-    public String getDistrict() {
-        return district;
+    public String getConclusionDistrict() {
+        return conclusionDistrict;
     }
 
-    public void setDistrict(String district) {
-        this.district = district;
+    public void setConclusionDistrict(String conclusionDistrict) {
+        this.conclusionDistrict = conclusionDistrict;
     }
 
-    public String getNeighbo() {
-        return neighbo;
+    public String getConclusionNeighbo() {
+        return conclusionNeighbo;
     }
 
-    public void setNeighbo(String neighbo) {
-        this.neighbo = neighbo;
+    public void setConclusionNeighbo(String conclusionNeighbo) {
+        this.conclusionNeighbo = conclusionNeighbo;
     }
 
     public Affirmations getWorkRalationedDisease() {

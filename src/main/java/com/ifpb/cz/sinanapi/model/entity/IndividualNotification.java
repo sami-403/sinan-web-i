@@ -50,5 +50,83 @@ public class IndividualNotification {
         this.motherName = motherName;
     }
 
+    public String getFullName() {
+        return fullName;
+    }
 
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public AgeUnit getAgeUnit() {
+        return ageUnit;
+    }
+
+    public void setAgeUnit(AgeUnit ageUnit) {
+        this.ageUnit = ageUnit;
+    }
+
+    public Integer getAgeValue() {
+        return ageValue;
+    }
+
+    public void setAgeValue(Integer ageValue) {
+        this.ageValue = ageValue;
+    }
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
+    }
+
+    public PregnancyStatus getPregnancyStatus() {
+        return pregnancyStatus;
+    }
+
+    public void setPregnancyStatus(PregnancyStatus pregnancyStatus) {
+        this.pregnancyStatus = pregnancyStatus;
+    }
+
+    public RaceOrColor getRaceOrColor() {
+        return raceOrColor;
+    }
+
+    public void setRaceOrColor(RaceOrColor raceOrColor) {
+        this.raceOrColor = raceOrColor;
+    }
+
+    public SchoolLevels getSchoolLevels() {
+        return schoolLevels;
+    }
+
+    public void setSchoolLevels(SchoolLevels schoolLevels) {
+        this.schoolLevels = schoolLevels;
+    }
+
+    public String getSusCardNumber() {
+        return susCardNumber;
+    }
+
+    public void setSusCardNumber(String susCardNumber) {
+        this.susCardNumber = susCardNumber;
+    }
+
+    public String getMotherName() {
+        return motherName;
+    }
+
+    public void setMotherName(String motherName) {
+        this.motherName = motherName;
+    }
 }

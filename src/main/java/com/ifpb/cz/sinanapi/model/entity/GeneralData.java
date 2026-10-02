@@ -19,10 +19,10 @@ public class GeneralData {
     private LocalDate notificationDate;
 
     @Enumerated(EnumType.STRING)
-    private FederativeUnit federativeUnit;
+    private FederativeUnit notifyingUf;
 
-    private String municipe;
-    private Integer ibgeCode;
+    private String notifyingMunicipe;
+    private Integer notifyingIbgeCode;
     private String notificationSource;
     private Integer cnes;
     private LocalDate symptomStartDate;
@@ -30,14 +30,14 @@ public class GeneralData {
     public GeneralData() {
     }
 
-    public GeneralData(NotificationType type, String agravo, String cid, LocalDate notificationDate, FederativeUnit federativeUnit, String municipe, Integer ibgeCode, String notificationSource) {
+    public GeneralData(NotificationType type, String agravo, String cid, LocalDate notificationDate, FederativeUnit notifyingUf, String notifyingMunicipe, Integer notifyingIbgeCode, String notificationSource) {
         this.type = type;
         this.agravo = agravo;
         this.cid = cid;
         this.notificationDate = notificationDate;
-        this.federativeUnit = federativeUnit;
-        this.municipe = municipe;
-        this.ibgeCode = ibgeCode;
+        this.notifyingUf = notifyingUf;
+        this.notifyingMunicipe = notifyingMunicipe;
+        this.notifyingIbgeCode = notifyingIbgeCode;
         this.notificationSource = notificationSource;
     }
 
@@ -74,28 +74,28 @@ public class GeneralData {
         this.notificationDate = notificationDate;
     }
 
-    public FederativeUnit getFederativeUnit() {
-        return federativeUnit;
+    public FederativeUnit getNotifyingUf() {
+        return notifyingUf;
     }
 
-    public void setFederativeUnit(FederativeUnit federativeUnit) {
-        this.federativeUnit = federativeUnit;
+    public void setNotifyingUf(FederativeUnit notifyingUf) {
+        this.notifyingUf = notifyingUf;
     }
 
-    public String getMunicipe() {
-        return municipe;
+    public String getNotifyingMunicipe() {
+        return notifyingMunicipe;
     }
 
-    public void setMunicipe(String municipe) {
-        this.municipe = municipe;
+    public void setNotifyingMunicipe(String notifyingMunicipe) {
+        this.notifyingMunicipe = notifyingMunicipe;
     }
 
-    public Integer getIbgeCode() {
-        return ibgeCode;
+    public Integer getNotifyingIbgeCode() {
+        return notifyingIbgeCode;
     }
 
-    public void setIbgeCode(Integer ibgeCode) {
-        this.ibgeCode = ibgeCode;
+    public void setNotifyingIbgeCode(Integer notifyingIbgeCode) {
+        this.notifyingIbgeCode = notifyingIbgeCode;
     }
 
     public String getNotificationSource() {
