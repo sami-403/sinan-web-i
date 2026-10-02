@@ -2,9 +2,10 @@ package com.ifpb.cz.sinanapi.model.entity;
 
 import com.ifpb.cz.sinanapi.model.entity.enums.FederativeUnit;
 import com.ifpb.cz.sinanapi.model.entity.enums.Zone;
+import jakarta.persistence.Embeddable;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
-
+@Embeddable
 public class ResidenceDetails {
     private FederativeUnit uf;
     private String residenceMunicipe;
