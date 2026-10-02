@@ -1,4 +1,4 @@
-package com.ifpb.cz.sinanapi.model;
+package com.ifpb.cz.sinanapi.model.entity;
 
 import jakarta.persistence.Embeddable;
 
