@@ -18,7 +18,7 @@ public class Conclusion {
     private ConfirmationCriteria confirmationCriteria;
 
     @Enumerated(EnumType.ORDINAL)
-    private Afimations fomTheResidenceMunice;
+    private Affirmations fomTheResidenceMunice;
 
     @Enumerated(EnumType.STRING)
     private FederativeUnit uf;
@@ -32,7 +32,7 @@ public class Conclusion {
     private String neighbo;
 
     @Enumerated(EnumType.ORDINAL)
-    private Afimations workRalationedDisease;
+    private Affirmations workRalationedDisease;
 
     @Enumerated(EnumType.ORDINAL)
     private CaseEvolutioin caseEvolutioin;
@@ -46,7 +46,7 @@ public class Conclusion {
 
     }
 
-    public Conclusion(LocalDate invetigationDate, Classification finalClassification, ConfirmationCriteria confirmationCriteria, Afimations fomTheResidenceMunice, FederativeUnit uf, String contry, String municipe, Integer ibgeCode, String district, String neighbo, Afimations workRalationedDisease, CaseEvolutioin caseEvolutioin, LocalDate deathDate, LocalDate endedDate) {
+    public Conclusion(LocalDate invetigationDate, Classification finalClassification, ConfirmationCriteria confirmationCriteria, Affirmations fomTheResidenceMunice, FederativeUnit uf, String contry, String municipe, Integer ibgeCode, String district, String neighbo, Affirmations workRalationedDisease, CaseEvolutioin caseEvolutioin, LocalDate deathDate, LocalDate endedDate) {
         this.invetigationDate = invetigationDate;
         this.finalClassification = finalClassification;
         this.confirmationCriteria = confirmationCriteria;
@@ -87,11 +87,11 @@ public class Conclusion {
         this.confirmationCriteria = confirmationCriteria;
     }
 
-    public Afimations getFomTheResidenceMunice() {
+    public Affirmations getFomTheResidenceMunice() {
         return fomTheResidenceMunice;
     }
 
-    public void setFomTheResidenceMunice(Afimations fomTheResidenceMunice) {
+    public void setFomTheResidenceMunice(Affirmations fomTheResidenceMunice) {
         this.fomTheResidenceMunice = fomTheResidenceMunice;
     }
 
@@ -143,11 +143,11 @@ public class Conclusion {
         this.neighbo = neighbo;
     }
 
-    public Afimations getWorkRalationedDisease() {
+    public Affirmations getWorkRalationedDisease() {
         return workRalationedDisease;
     }
 
-    public void setWorkRalationedDisease(Afimations workRalationedDisease) {
+    public void setWorkRalationedDisease(Affirmations workRalationedDisease) {
         this.workRalationedDisease = workRalationedDisease;
     }
 
