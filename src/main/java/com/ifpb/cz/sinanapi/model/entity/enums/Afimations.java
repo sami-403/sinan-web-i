@@ -1,18 +1,18 @@
 package com.ifpb.cz.sinanapi.model.entity.enums;
 
-public enum Zone {
-    URBANA(1),
-    RURAL(2),
-    PERIURBANA(3),
-    IGNORADO(9);
+public enum Afimations {
+    SIM(1),
+    NAO(2),
+    INDETERMIDO(2);
 
     private final Integer code;
-    Zone(Integer code) {
+
+    Afimations(Integer code){
         this.code = code;
     }
+
 
     public Integer getCode() {
         return code;
     }
-
 }

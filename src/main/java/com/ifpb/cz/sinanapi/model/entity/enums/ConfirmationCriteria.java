@@ -1,18 +1,16 @@
 package com.ifpb.cz.sinanapi.model.entity.enums;
 
-public enum Zone {
-    URBANA(1),
-    RURAL(2),
-    PERIURBANA(3),
-    IGNORADO(9);
+public enum ConfirmationCriteria {
+    LABORATORIAL(1),
+    CLINICO_EPIDEMIOLOGICO(2);
 
     private final Integer code;
-    Zone(Integer code) {
+
+    ConfirmationCriteria(Integer code){
         this.code = code;
     }
 
     public Integer getCode() {
         return code;
     }
-
 }
