@@ -9,7 +9,7 @@ import java.time.LocalDate;
 
 @Embeddable
 public class Conclusion {
-    private LocalDate invetigationDate;
+    private LocalDate investigationDate;
 
     @Enumerated(EnumType.ORDINAL)
     private Classification finalClassification;
@@ -18,11 +18,11 @@ public class Conclusion {
     private ConfirmationCriteria confirmationCriteria;
 
     @Enumerated(EnumType.ORDINAL)
-    private Afimations fomTheResidenceMunice;
+    private Affirmations fromResidenceMunicipality;
 
     @Enumerated(EnumType.STRING)
     private FederativeUnit uf;
-    private String contry;
+    private String conutry;
 
     private String municipe;
 
@@ -32,10 +32,10 @@ public class Conclusion {
     private String neighbo;
 
     @Enumerated(EnumType.ORDINAL)
-    private Afimations workRalationedDisease;
+    private Affirmations workRalationedDisease;
 
     @Enumerated(EnumType.ORDINAL)
-    private CaseEvolutioin caseEvolutioin;
+    private CaseEvolution caseEvolution;
 
     private LocalDate deathDate;
 
@@ -46,29 +46,29 @@ public class Conclusion {
 
     }
 
-    public Conclusion(LocalDate invetigationDate, Classification finalClassification, ConfirmationCriteria confirmationCriteria, Afimations fomTheResidenceMunice, FederativeUnit uf, String contry, String municipe, Integer ibgeCode, String district, String neighbo, Afimations workRalationedDisease, CaseEvolutioin caseEvolutioin, LocalDate deathDate, LocalDate endedDate) {
-        this.invetigationDate = invetigationDate;
+    public Conclusion(LocalDate investigationDate, Classification finalClassification, ConfirmationCriteria confirmationCriteria, Affirmations fromResidenceMunicipality, FederativeUnit uf, String conutry, String municipe, Integer ibgeCode, String district, String neighbo, Affirmations workRalationedDisease, CaseEvolution caseEvolution, LocalDate deathDate, LocalDate endedDate) {
+        this.investigationDate = investigationDate;
         this.finalClassification = finalClassification;
         this.confirmationCriteria = confirmationCriteria;
-        this.fomTheResidenceMunice = fomTheResidenceMunice;
+        this.fromResidenceMunicipality = fromResidenceMunicipality;
         this.uf = uf;
-        this.contry = contry;
+        this.conutry = conutry;
         this.municipe = municipe;
         this.ibgeCode = ibgeCode;
         this.district = district;
         this.neighbo = neighbo;
         this.workRalationedDisease = workRalationedDisease;
-        this.caseEvolutioin = caseEvolutioin;
+        this.caseEvolution = caseEvolution;
         this.deathDate = deathDate;
         this.endedDate = endedDate;
     }
 
     public LocalDate getInvetigationDate() {
-        return invetigationDate;
+        return investigationDate;
     }
 
-    public void setInvetigationDate(LocalDate invetigationDate) {
-        this.invetigationDate = invetigationDate;
+    public void setInvetigationDate(LocalDate investigationDate) {
+        this.investigationDate = investigationDate;
     }
 
     public Classification getFinalClassification() {
@@ -87,12 +87,12 @@ public class Conclusion {
         this.confirmationCriteria = confirmationCriteria;
     }
 
-    public Afimations getFomTheResidenceMunice() {
-        return fomTheResidenceMunice;
+    public Affirmations getFromResidenceMunicipality() {
+        return fromResidenceMunicipality;
     }
 
-    public void setFomTheResidenceMunice(Afimations fomTheResidenceMunice) {
-        this.fomTheResidenceMunice = fomTheResidenceMunice;
+    public void setFromResidenceMunicipality(Affirmations fromResidenceMunicipality) {
+        this.fromResidenceMunicipality = fromResidenceMunicipality;
     }
 
     public FederativeUnit getUf() {
@@ -103,12 +103,12 @@ public class Conclusion {
         this.uf = uf;
     }
 
-    public String getContry() {
-        return contry;
+    public String getConutry() {
+        return conutry;
     }
 
-    public void setContry(String contry) {
-        this.contry = contry;
+    public void setConutry(String conutry) {
+        this.conutry = conutry;
     }
 
     public String getMunicipe() {
@@ -143,20 +143,20 @@ public class Conclusion {
         this.neighbo = neighbo;
     }
 
-    public Afimations getWorkRalationedDisease() {
+    public Affirmations getWorkRalationedDisease() {
         return workRalationedDisease;
     }
 
-    public void setWorkRalationedDisease(Afimations workRalationedDisease) {
+    public void setWorkRalationedDisease(Affirmations workRalationedDisease) {
         this.workRalationedDisease = workRalationedDisease;
     }
 
-    public CaseEvolutioin getCaseEvolutioin() {
-        return caseEvolutioin;
+    public CaseEvolution getCaseEvolutioin() {
+        return caseEvolution;
     }
 
-    public void setCaseEvolutioin(CaseEvolutioin caseEvolutioin) {
-        this.caseEvolutioin = caseEvolutioin;
+    public void setCaseEvolutioin(CaseEvolution caseEvolution) {
+        this.caseEvolution = caseEvolution;
     }
 
     public LocalDate getDeathDate() {

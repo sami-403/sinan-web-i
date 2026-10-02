@@ -1,6 +1,6 @@
 package com.ifpb.cz.sinanapi.model.entity.enums;
 
-public enum CaseEvolutioin {
+public enum CaseEvolution {
         CURA(1),
         OBITO_AGRAVO(2),
         OBITO_OUTRAS_CAUSAS(3),
@@ -8,7 +8,7 @@ public enum CaseEvolutioin {
 
         private final int codigo;
 
-        CaseEvolutioin(int codigo) {
+        CaseEvolution(int codigo) {
             this.codigo = codigo;
         }
 

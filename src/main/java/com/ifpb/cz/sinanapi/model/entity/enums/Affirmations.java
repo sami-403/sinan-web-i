@@ -1,13 +1,13 @@
 package com.ifpb.cz.sinanapi.model.entity.enums;
 
-public enum Afimations {
+public enum Affirmations {
     SIM(1),
     NAO(2),
-    INDETERMIDO(2);
+    INDETERMINADO(3);
 
     private final Integer code;
 
-    Afimations(Integer code){
+    Affirmations(Integer code){
         this.code = code;
     }
 
