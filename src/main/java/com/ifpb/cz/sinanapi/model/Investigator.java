@@ -1,5 +1,8 @@
 package com.ifpb.cz.sinanapi.model;
 
+import jakarta.persistence.Embeddable;
+
+@Embeddable
 public class Investigator {
 
     private String municipeOrUbs;
